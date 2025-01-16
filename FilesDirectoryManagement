@@ -1,1 +1,7 @@
-ls: list directory contents
+ls : list directory contents of current directory
+ls /path/to/dir : list content of child directory
+
+cd dir: change directory to dir
+mkdir dir: make directory named dir in current directory
+rmdir dir: remove a specific empty directory
+cp dir1 dir2: copy dir1 contents(including dir1) into dir2
