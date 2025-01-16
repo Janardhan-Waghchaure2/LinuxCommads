@@ -8,6 +8,7 @@ find filename.txt : search a specific file in current directory
 find ./path/to/dir -name dirName : search for directory in given directory(or file)
 
 ls : list directory contents of current directory
+ls -l : list directory contents in long form
 ls /path/to/dir : list content of child directory
 ls | grep mydir : sort the output of directory content with "mydir" name
 
