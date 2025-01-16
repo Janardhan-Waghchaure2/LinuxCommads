@@ -1,0 +1,11 @@
+ping: Check network connectivity.
+
+ifconfig: Configure network interfaces.
+
+netstat: Network statistics.
+
+ssh: Secure shell for remote login.
+
+scp: Secure copy (remote file transfer).
+
+curl: Transfer data from or to a server.
