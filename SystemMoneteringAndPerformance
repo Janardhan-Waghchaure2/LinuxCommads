@@ -1,0 +1,11 @@
+top: Display tasks and system resource usage.
+
+htop: Interactive process viewer.
+
+ps: Report a snapshot of current processes.
+
+df: Report disk space usage.
+
+du: Estimate file space usage.
+
+free: Display memory usage/.
