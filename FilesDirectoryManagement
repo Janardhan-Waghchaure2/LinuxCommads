@@ -1,18 +1,25 @@
-ls : list directory contents of current directory
-ls /path/to/dir : list content of child directory
-
 cd dir: change directory to dir
 cd .. : move to parent directory
 cd .  : move to current directory(nothing will change)
 
+cp dir1 dir2: copy dir1 contents(including dir1) into dir2
+
+ls : list directory contents of current directory
+ls /path/to/dir : list content of child directory
+
 mkdir dir: make directory named dir in current directory
+
+mv f1.txt f2.txt: move/rename files from f1 to f2
+mv mydir1 mydir2: move/rename directory from mydir1 to mydir2
+
+pwd : present working directory
+
 rmdir dir: remove a specific empty directory
 
 rm filename: removes file
 
-cp dir1 dir2: copy dir1 contents(including dir1) into dir2
+
 
 touch file: make new file in current directory
 
-mv f1.txt f2.txt: move/rename files from f1 to f2
-mv mydir1 mydir2: move/rename directory from mydir1 to mydir2
+
