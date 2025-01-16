@@ -1,0 +1,11 @@
+who: Show who is logged on.
+
+w: Show who is logged on and what they are doing.
+
+useradd: Create a new user.
+
+usermod: Modify a user account.
+
+passwd: Change user password.
+
+groupadd: Create a new group.
