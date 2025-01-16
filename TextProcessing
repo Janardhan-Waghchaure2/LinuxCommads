@@ -1,0 +1,5 @@
+cat filename : shows the content of file concatnated with empty file
+cat file1 file2 : shows the concatnated content of file1 and file2
+
+cat file.txt | grep "example" : to search for specific pattern in a file
+
