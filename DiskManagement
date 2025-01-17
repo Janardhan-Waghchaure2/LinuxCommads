@@ -1,0 +1,7 @@
+fdisk: Partition table manipulator.
+
+mkfs: Build a Linux file system.
+
+mount: Mount a file system.
+
+umount: Unmount file systems.
