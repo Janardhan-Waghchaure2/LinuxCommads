@@ -1,0 +1,14 @@
+1. -eq : equal to operator
+   [ $a -eq $b ] 
+
+2. -ne : not equal to operator
+   [ $a -ne $b ]
+
+3. -lt : not equal to operator
+   [ $a -lt $b ] 
+
+4. -le : less than or equal
+
+5. -gt : greater than operator
+   
+6. -ge : greater than or equal 

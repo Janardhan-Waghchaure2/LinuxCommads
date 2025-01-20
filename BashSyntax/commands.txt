@@ -1,0 +1,5 @@
+Chmod : change mode -> to change mode system access permissions.
+
+curl url: to download or upload data to a server via supported protocols such as HTTP, FTP, IMAP, SFTP, TFTP, IMAP, POP3, SCP, etc
+
+sudo su -> login as root user.

@@ -1,0 +1,12 @@
+1. result=$((a + b))   
+
+2. result=$((a - b))
+
+3. result=$((a * b))
+
+4. result=$((a / b))
+
+5. result=$((a % b))  -> modulus
+
+6. result=$((a ** b)) -> exponentiation
+

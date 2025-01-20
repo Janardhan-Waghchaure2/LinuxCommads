@@ -1,0 +1,33 @@
+The #!/bin/bash line at the beginning of a script is known as a shebang or hashbang. 
+While it looks like a comment, it serves a crucial purpose:
+
+Purpose of Shebang
+	1. Specifies the Interpreter: The shebang tells the operating system which interpreter 
+           to use to execute the script. In this case, /bin/bash specifies that the script should 
+           be run using the Bash shell. This is important because different shells (like sh, zsh, ksh) 
+           have different features and syntax.
+
+	2. Portability: Including the shebang makes your script more portable. If you move the script 
+           to another system, the shebang ensures it uses the correct interpreter, avoiding potential 
+           errors or unexpected behavior.
+
+	3. Convenience: When you run the script directly from the command line (e.g., ./script.sh), 
+           the shebang allows the system to automatically use the specified interpreter without needing 
+           to type "bash script.sh"
+
+Example-------
+Here’s a simple script with a shebang:
+
+#!/bin/bash
+echo "Hello, World!"
+
+Without the shebang, you would need to explicitly call the interpreter:
+
+"bash script.sh"
+--------------
+
+Including the shebang makes it easier to execute the script directly and 
+ensures it runs as intended across different environments
+
+
+If you have any more questions or need further clarification, feel free to ask!

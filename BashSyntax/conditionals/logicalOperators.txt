@@ -1,0 +1,7 @@
+1. [ $a -eq 1 ] && [ $b -eq 2 ] -> logical and
+
+2. [ $a -eq 1 ] || [ $b -eq 2 ] -> logical or
+
+3. [ ! $a -eq 1 ]  -> logical not
+
+4. 1 evaluates to true , 0 evaluates to false 

@@ -1,0 +1,9 @@
+In Bash scripting, the syntax variable=$(command) is used for command substitution. This means that the output of the command inside the parentheses is assigned to the variable. Here’s a simple example to illustrate this:
+
+#!/bin/bash
+
+# Assign the output of the 'date' command to the variable 'current_date'
+current_date=$(date)
+
+# Print the value of 'current_date'
+echo "The current date and time is: $current_date"

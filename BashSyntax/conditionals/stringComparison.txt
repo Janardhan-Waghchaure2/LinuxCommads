@@ -1,0 +1,17 @@
+1. = : equal to 
+   [ "$a" = "$b" ]
+
+2. != : not equal to
+   [ "$a" != "$b" ]
+
+3. < : less than(ASCII comparison)
+   [ "$a" \< "$b" ]
+
+4. > : greater than(ASCII comparison)
+   [ "$a" \> "$b" ]
+
+5. -z: string is null(zero length)
+   [ -z "$a" ]
+
+6. -n: string is not null 
+   [ -n "$a" ]

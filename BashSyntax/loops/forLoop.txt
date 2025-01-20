@@ -1,0 +1,73 @@
+# print 1 to 5
+for i in {1..5}
+do 
+    echo "Number: $i"
+done
+
+
+-------------------------
+
+#!/bin/bash
+
+# print 5 to 1 reverse order (gap = -1 -> every element)
+for i in $(seq 5 -1 1)
+do 
+    echo "Number: $i"
+done
+
+echo "---------"
+# print 1 to 5 with gap 2.
+for i in $(seq 1 2 5)
+do 
+    echo "Number: $i"
+done
+
+----------------
+#!/bin/bash
+
+# traverse through string items
+for item in apple banana cherry
+do 
+    echo "Fruit: $item"
+done
+
+
+----------------
+#!/bin/bash
+
+# programming style looping 
+for ((i=1; i<=5 ; i++))
+do
+    echo "Number: $i"
+done
+
+-----------------
+#!/bin/bash
+
+# traverse each file in current folder
+for file in ./*
+do 
+    echo "File: $file"
+done 
+
+-----------------
+#!/bin/bash
+# print even number from 0 to 10
+for i in {0..10..2}
+do 
+    echo "Even Number: $i"
+done
+
+-----------------
+
+#!/bin/bash
+# traverse the array with for loop
+arr=("one" "two" "three")
+for element in "${arr[@]}"
+do 
+    echo "Element: $element"
+done 
+---------------------
+
+
+

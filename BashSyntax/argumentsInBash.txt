@@ -1,0 +1,68 @@
+1. Positional Parameters
+   ----- sample.sh ------
+   echo "Script name: $0" # 0th arg. is the script name
+   echo "First argument: $1" # 1st argument
+   echo "Second argument: $2" # 2nd argument
+
+   call above script like
+   bash sample.sh arg1 arg2
+
+2. special parameters of script
+   $@: all positional parameters as separate words.
+   $*: all positional parameters as a single word.
+   $#: numbers of positional parameters
+   $?: exit status of last executed command.
+   $$: process id of script.
+
+   echo "number of arguments passed to the script: $#"
+
+3. shift arguments -> shift arguments left by 1.
+
+   ----- sample.sh ------
+   #!/bin/bash
+   while [[ $# -gt 0 ]]; do
+	echo "Argument: $1"
+        shift
+   done
+
+   # call
+   bash script.sh arg1 arg2  arg2
+
+
+4. getopts for parsing options in loop
+   its useful while passing options/flags like -a , -b , -c
+
+   #!/bin/bash
+   while getopts "a:b:c" opt; do
+	case $opt in 
+	    a) 
+		echo "Option a: $OPTARG"
+                ;;
+	    b)
+		echo "Option a: $OPTARG"
+		;;
+	    c)
+		echo "Option c: $OPTARG"
+		;;
+	    *)
+		echo "Invalid option: -$OPTARG"
+		;;
+ 	 esac
+    done
+
+    # call
+    ./script.sh -a value1 -b value2 -c value3
+
+5. for loop to traverse(using "$@" to traverse space separated args)
+   
+   #!/bin/bash
+   for arg in "$@"; do
+  	echo "Argument: $arg"
+   done
+
+   # call
+   ./script.sh "arg 1" "arg 2" "arg 3"
+
+
+
+

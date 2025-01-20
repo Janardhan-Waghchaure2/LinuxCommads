@@ -1,0 +1,61 @@
+Objective: Create a Bash script that takes a directory as an argument, 
+compresses its contents into a tar.gzfile, and stores the backup in a 
+designated backup directory with a timestamp.
+
+------- backup.sh---------
+#!/bin/bash
+
+# if directory argument is null then throw error
+if [ -z "$1" ]; then 
+    echo "Error: no directory path provided."
+    exit 1 # return status code failure
+fi
+
+# Assign the directory path to a variable.
+DIR=$1
+
+# Check if directory don't exists then show error message.
+if [ ! -d "$DIR" ]; then 
+    echo "Error: Directory '$DIR' does not exists."
+    exit 1
+fi
+
+# Create backup directory if it doesn't exist
+BACKUP_DIR="backups"
+mkdir -p $BACKUP_DIR
+
+# Get the current date and time
+TIMESTAMP=$(date +%Y%m%d_%H%M)
+
+# Create the backup file name
+BACKUP_FILE="$BACKUP_DIR/$(basename $DIR)_backup_$TIMESTAMP.tar.gz"
+
+
+# Create the backup
+echo "Creating backup of  '$DIR'..."
+tar -czf $BACKUP_FILE $DIR
+
+
+# Check if the backup was successful
+if [ $? -eq 0 ]; then
+    echo "Backup created successfully: $BACKUP_FILE"
+else 
+    echo "Error: Backup failed."
+    exit 1
+fi
+-------------------
+
+instructions
+save above in backup.sh
+chmod +x backup.sh # to add premissions for executing code.
+run the script bash backup.sh
+
+
+
+echo "enter a directory: "
+read dirName
+for dir in $dirname/*; do
+    echo $dir
+done
+
+

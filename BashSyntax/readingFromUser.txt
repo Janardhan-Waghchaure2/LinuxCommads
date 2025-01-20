@@ -1,0 +1,7 @@
+#!/bin/bash
+# print the value entered by the user
+echo "enter first integer" && read VAR1
+echo "you entered : $VAR1"
+
+----------------
+

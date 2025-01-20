@@ -1,0 +1,35 @@
+1. command1 || command2 => command2 is executed when command1's output
+   returns some non zero status(i.e when command1 fails)
+
+2. command1 && command2 => command2 is executed only when command1 is  
+   command1 output is zero(i.e when command1 succed)
+
+3. command1 && command2 || command3 => 
+   command2 will execute only if command1 is successful
+   If either command1 fails or command2 fails, command3 will execute
+
+
+4. command1 ; command2 =>
+   execute command2 irrespective of command1's success or failure
+
+
+5. command1 & =>
+   allows commands to be executed in background freeing up the terminal.
+
+6. | (pipe character) => 
+   command1 | command2 => sends output of command1 as input to command 2
+   ex:-> ls | grep "filename" -> filter all directories which has filename
+   init.'
+
+7. subshell command -> $(...)
+   it executes the command in subshell and returns the output
+   current_date=$(date)
+
+8. echo "Hello word" > output.txt 
+   => writes content to the file
+
+9. echo "Hello word2" >> output.txt
+   => appends content to text file
+
+10. ! logical not
+   => inverts the output of conditional statements.

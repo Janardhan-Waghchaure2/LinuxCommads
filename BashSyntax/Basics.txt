@@ -1,0 +1,22 @@
+1. TCP = Transmission Control Protocol
+
+2. layers
+	Application(layer 5)
+	Transport(layer 4)
+	Network(layer 3)
+	Data link(layer 2)
+	physical(layer 1)
+
+
+physical -> layer1
+data link -> layer2
+network -> layer3
+transport -> layer4
+application -> layer5
+
+
+applicatin->http/ftp/smpt , (presentaion + session)
+transport - udp/tcp -> data packets
+network -ip addresses rounters/routing
+data link layer -> hub
+physical -> cabels , bits , devices.

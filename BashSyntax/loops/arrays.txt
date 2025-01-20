@@ -1,0 +1,9 @@
+1. declare -a array_name # declare the array
+
+2. array_name=(value1 value2 value3) # create and initilize at same time
+
+3. echo ${arr[0]} # print value at given index
+
+4. echo ${arr[@]} # -> element1 element2 ... element_n
+
+

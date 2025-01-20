@@ -1,0 +1,121 @@
+#!/bin/bash
+
+# print a message if variable is greater than 10.
+echo -n "Enter a number: "
+read VAR
+
+if [ $VAR -gt 10 ];
+    then 
+        echo "The variable is greater than 10."
+fi
+------------------
+
+#!/bin/bash
+
+# use of if-else
+echo -n "Enter a number: "
+read VAR
+
+if [ $VAR -gt 10 ]; then 
+    echo "The variable is greater than 10."
+else 
+    echo "The variable is less than 10."
+fi
+
+------------------
+#!/bin/bash
+
+# use of if , else-if , else
+echo -n "Enter a number: "
+read VAR
+
+if [ $VAR -gt 10 ]; then 
+    echo "The variable is greater than 10."
+elif [ $VAR -eq 10 ]; then 
+    echo "The variable is equal to 10."
+else 
+    echo "The variable is less than 10."
+fi
+-------------------
+
+
+#!/bin/bash
+
+# use of logical and operator(&&)
+echo -n "Enter a number: "
+read VAR
+
+if [ $VAR -gt 10 ] && [ $VAR -lt 20 ]; then 
+    echo "The variable is between 10 and 20."
+else 
+    echo "The variable is not between 10 and 20."
+fi
+-------------------
+
+#!/bin/bash
+
+# conditional or demonstration.
+MYVAR=15
+if [ $MYVAR -lt 10 ] || [ $MYVAR -gt 20 ]; then
+    echo "The variable is between lt 10 or gt 20."
+else 
+    echo "asdfa"
+fi
+
+--------------------
+
+#!/bin/bash
+
+echo -n "Enter a file path: "
+read FILE
+# read the file and determine its type
+if [ -f "$FILE" ]; then
+  echo "$FILE is a regular file."
+elif [ -d "$FILE" ]; then
+  echo "$FILE is a directory."
+elif [ -L "$FILE" ]; then
+  echo "$FILE is a symbolic link."
+else
+  echo "$FILE does not exist."
+fi
+
+
+--------------------
+
+
+case "$variable" in
+    pattern1)
+        # code for pattern1
+        ;;
+    pattern2)
+        # code for pattern2
+        ;;
+    *)
+        # default code
+        ;;
+esac
+
+--------------------
+
+select option in option1 option2 option3; do
+    case $option in
+        option1)
+            # code for option1
+            ;;
+        option2)
+            # code for option2
+            ;;
+        option3)
+            # code for option3
+            ;;
+        *)
+            echo "Invalid option"
+            ;;
+    esac
+done
+
+
+
+
+
+

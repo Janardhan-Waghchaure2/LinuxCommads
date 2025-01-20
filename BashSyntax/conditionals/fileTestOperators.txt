@@ -1,0 +1,15 @@
+1. [ -e file ]  -> file exists
+
+2. [ -f file ]  -> regular file
+
+3. [ -d directory ] -> directory
+
+4. [ -r file ]  -> file is readable 
+
+5. [ -w file ]  -> file is writable 
+
+6. [ -x file ]  -> executable file
+
+7. [ -s file ]  -> non-zero size 
+
+8. [ -L file ]  -> symbolic link

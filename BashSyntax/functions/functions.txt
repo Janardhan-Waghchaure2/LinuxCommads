@@ -1,0 +1,57 @@
+#!/bin/bash
+
+# simple function to print hello world
+greet(){
+   echo "hello user"
+}
+# write "greet" in linux terminal to execute the function
+greet
+
+-----------------------
+
+#!/bin/bash
+
+# accesing function parameters and pritning it
+print_params() {
+  echo "Parameter 1: $1"
+  echo "Parameter 2: $2"
+}
+print_params "Hello" "World"
+
+
+----------------------
+
+# using echo to return the values
+add_numbers() {
+  local sum=$(( $1 + $2 ))
+  echo $sum
+}
+
+result=$(add_numbers 5 10)
+echo "The sum is: $result"
+
+
+----------------------
+
+# using return for returning the status codes.
+check_even() {
+  if (( $1 % 2 == 0 )); then
+    return 0  # Success
+  else
+    return 1  # Failure
+  fi
+}
+
+check_even 4
+if [ $? -eq 0 ]; then
+  echo "Number is even"
+else
+  echo "Number is odd"
+fi
+
+echo: Used to output values from a function, which can be captured using command substitution.
+return: Used to return an exit status code from a function, typically for indicating success or failure.
+
+
+-------------------------
+

@@ -1,0 +1,23 @@
+1. What is a Bash Script?
+
+ A Bash script is a plain text file containing a series of commands that are executed by the Bash shell. 
+ These scripts can automate repetitive tasks, manage system operations, and perform complex workflows.
+
+2. Bash is a shell and command language interpreter and there are other 
+   interpreters like bash:
+	1. zsh -> z shell
+	2. fish -> frindly interactive shell
+	3. ksh  -> korn shell
+	4. tcsh -> tenex c shell
+	5. dash -> debian almiquist shell
+3. although shell script is just of bunch of basic linux commands echo , ls , cd ..
+   below are the extra feature of shell script.
+	1. commands ls , cd , echo
+	2. variables 
+	3. loops , for and while
+	4. conditionals if-else , case
+	5. functions 
+	6. error handling
+	7. input , read function
+	8. output redirecting / writing output to a file
+	9. scheduling , automate scirpt execution using cron jobs

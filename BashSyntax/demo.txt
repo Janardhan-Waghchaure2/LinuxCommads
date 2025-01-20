@@ -1,1 +1,21 @@
-some text
+PATH=$1 # directory path
+
+# check if some path is passed and is not null
+if [ -z  $PATH ]; do
+    echo "Error: Given path is null"
+    exit 1
+fi
+
+# check if the directory exists
+if [ ! -d $PATH ]; do
+    echo "Error: Given path '$PATH' don't exists , please provide valid path"
+    exit 1
+fi
+
+
+for file in '$PATH'/*; do
+        
+        # skip the file if its not a normal file
+	if [ -f "$file" ] || continue
+
+	
