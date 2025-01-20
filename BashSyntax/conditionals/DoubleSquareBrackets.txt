@@ -1,0 +1,17 @@
+1. double square brackets([[...]]) They provide more features and are considered safer 
+   and more versatile than single square brackets [ ... ].
+
+2. [[]] supports advanced conditional operators lile =~ for regex matching.
+   if [[ $string =~ "^[a-zA-Z]+$" ]]; then 
+       echo "some text here"
+   fi
+
+3. [[]] supports improved string comparison with == operator
+   if [[ $string == "somestring" ]]; then 
+      echo "string matched"
+   fi
+
+4. They support logical And(&&) , or(||) directly within brackets itself.
+   if [[ $num -gt 0 && $num -lt 100 ]]; then 
+       echo "number is between 1 and 99"
+   fi
